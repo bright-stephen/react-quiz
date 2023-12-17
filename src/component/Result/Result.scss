@@ -1,0 +1,100 @@
+@import "../../styles/var.scss";
+
+.result {
+    text-align: center;
+    
+
+    h3 {
+        font-size: 16px;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 500;
+
+
+        span {
+            color: $primary;
+            font-size: 16px;
+        }
+    }
+
+
+    table {
+        width:  50%;
+        text-align: left;
+        margin: 50px auto 20px;
+        border-collapse: collapse;
+        font-size: 12px;
+
+        tr {
+            border: 1px solid $primary;
+            padding: 10px;
+        }
+    }
+
+    button {
+    background: linear-gradient(0deg, $primary 00.03%, $accent);
+    border-radius: 9px;
+    font-size: 16px;
+    color: $bg;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 570px) {
+    .result {
+        text-align: center;
+        
+    
+        h3 {
+            font-size: 9px;
+            letter-spacing: 1.4px;
+            text-align: center;
+            margin-top: 12px;
+        }
+    
+        p {
+            font-size: 12px;
+            font-weight: 500;
+    
+    
+            span {
+                color: $primary;
+                font-size: 12px;
+            }
+        }
+    
+    
+        table {
+            width:  60%;
+            text-align: left;
+            margin: 50px auto 20px;
+            border-collapse: collapse;
+            font-size: 12px;
+    
+            tr {
+                border: 1px solid $primary;
+                padding: 10px;
+            }
+        }
+    
+        button {
+        background: linear-gradient(0deg, $primary 00.03%, $accent);
+        border-radius: 9px;
+        font-size: 12px;
+        color: $bg;
+        padding: 7px 16px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+@import "../../styles/var.scss";
+
+
+.quiz-container {
+    width: 500px;
+    background: $bg;
+    border-radius: 4px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position: relative;
+
+    .active-question-no {
+        font-size: 32px;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    .total-question {
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    ul {
+        margin-top: 20px;
+        margin-left: -40px;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            color: $foreground;
+            font-size: 16px;
+            background-color: $bg;
+            border: 1px solid $disabled;
+            border-radius: 16px;
+            padding: 11px;
+            margin-top: 15px;
+            cursor: pointer;
+
+        }
+
+        .selected-answer {
+            background: $primary;
+            border: 1px solid $accent;
+            color: $bg;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+
+
+        button {
+        background: linear-gradient(0deg, $primary 00.03%, $accent);
+        border-radius: 9px;
+        font-size: 18px;
+        color: $bg;
+        padding: 10px 42px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: $bg-accent;
+            color: $disabled;
+            cursor: not-allowed;
+        }
+    }
+    }
+
+    
+
+    input {
+        border: 1px solid black;
+        border-radius: 16px;
+        padding: 12px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+   
+}
+
+
+@media (min-width: 0px) and (max-width: 570px) {
+    .quiz-container {
+        width: 300px;
+        background: $bg;
+        border-radius: 4px;
+        margin-top: 100px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        position: relative;
+    
+        .active-question-no {
+            font-size: 20px;
+            font-weight: 300;
+            color: $primary;
+        }
+    
+        .total-question {
+            font-size: 12px;
+            font-weight: 400;
+            color: $disabled;
+        }
+        h2 {
+            font-size: 14px;
+            font-weight: 4;
+            margin: 0;
+        }
+    
+        ul {
+            margin-top: 20px;
+            margin-left: -40px;
+    
+            li {
+                text-decoration: none;
+                list-style: none;
+                color: $foreground;
+                font-size: 12px;
+                background-color: $bg;
+                border: 1px solid $disabled;
+                border-radius: 16px;
+                padding: 7px;
+                margin-top: 10px;
+                cursor: pointer;
+    
+            }
+    
+            .selected-answer {
+                background: $primary;
+                border: 1px solid $accent;
+                color: $bg;
+            }
+        }
+    
+        .footer {
+            display: flex;
+            justify-content: flex-end;
+    
+    
+            button {
+            background: linear-gradient(0deg, $primary 00.03%, $accent);
+            border-radius: 9px;
+            font-size: 13px;
+            color: $bg;
+            padding: 7px 28px;
+            outline: none;
+            border: none;
+            margin-top: 15px;
+            cursor: pointer;
+    
+            &:disabled {
+                background-color: $bg-accent;
+                color: $disabled;
+                cursor: not-allowed;
+            }
+        }
+        }
+    
+        
+    
+        input {
+            border: 1px solid black;
+            border-radius: 16px;
+            padding: 7px 14px;
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        .text {
+            font-size: 10px;
+            margin-top: 10px;
+        }
+       
+    }
+}

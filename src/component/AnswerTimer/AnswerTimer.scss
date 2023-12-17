@@ -1,0 +1,18 @@
+@import "../../styles/var.scss";
+
+.answer-timer-loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+
+
+    .progress {
+        height: 10px;
+        transition-duration: 1s;
+        width: 100%;
+        transition-timing-function: linear;
+        background: red;
+    }
+}
